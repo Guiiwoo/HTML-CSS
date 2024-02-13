@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        @font-face {
+            font-family:'moon';
+            src: url('fonts/Moonchild.otf') format('opentype'), url('fonts/Moonchild.ttf') format('truetype');
+
+            /*
+            Tipos de format()
+            - opentype (otf)
+            - truetype (ttf)
+            - embedded-opentype
+            - turetuype-aat (Apple Advanced Typography)
+            - svg
+            */
+        }
+        body{
+            font-family: 'moon' ,Arial, "Helvetica Neue", Helvetica, sans-serif;
+            font-size: 1.5em;
+        }
+        h1{
+            font-family: 'moon', sans-serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, consequuntur praesentium non a architecto ipsa dolorum quos consectetur? Dignissimos nulla dolorum consequatur cupiditate doloremque, enim sed optio quibusdam maxime? Eligendi.</p>
+</body>
+</html>

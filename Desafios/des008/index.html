@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência &#x1F92F</p>
+    <picture>
+        <source media="(max-width: 707px)" srcset="imagens/imagem-p.jpg" type="image/jpeg"> 
+        <source media="(max-width: 1007px)" srcset="imagens/imagem-m.jpg" type="image/jpeg">
+        <img src="imagens/imagem-g.jpg" alt="Mulher no alto de uma montanha abrindo os braços" type="image/jpeg">
+    </picture>
+</body>
+</html>

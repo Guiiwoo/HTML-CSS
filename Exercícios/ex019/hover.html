@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de Hover</title>
+    <style>
+        body{
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+        }
+        div#d1:hover{
+            color: red;
+        }
+        div#d1:hover > p {
+            display: block;
+            color: white;
+            background-color: red;
+            width: 90px;
+        }
+        div#d1 > p{  
+            display: none;
+
+        } /* o div de ID d1 tem um filho, o <p>, e eu quero que ele esconda esse <p> */
+    </style>
+</head>
+<body>
+    <h1>Exemplo de hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div id="d1">Passe o mouse aqui
+        <p>EU SOU GAY</p>
+    </div>
+</body>
+</html>
