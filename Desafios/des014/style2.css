@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
 
 :root{
-    --fonte-padrao: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte-padrao: Arial, Helvetica, sans-serif;
     --fonte1: 'Passion One', 'cursive';
     --fonte2: 'Sriracha', 'cursive';
 }
@@ -12,7 +12,7 @@
 }
 
 body{
-    background-color: black;
+    background-color: grey;
     min-height: 100vh;
     font-family: var(--fonte-padrao);
 }
@@ -24,7 +24,7 @@ header{
 }
 
 header > h1{
-   padding-top: 50px;
+   padding-top: 50px; 
    font-variant: small-caps;
    font-family: var(--fonte1);
    font-size: 10vw;
@@ -32,7 +32,6 @@ header > h1{
 
 header > p{
     padding-bottom: 50px;
-    font-size: 0.9em;
 }
 
 a{
@@ -45,50 +44,29 @@ a:hover{
     text-decoration: underline;
 }
 
-main{
-    background-color: white;
-    border-radius: 5px;
-    max-width: 1000px;
-    min-width: 300px;
-    margin: auto;
-}
-
 section{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte2);
-    font-size: 3vw;
+    font-size: 3.5vw;
 }
 
 section.normal{
-
+    background-color: white;
+    color: black;
 }
 
 section.imagem{
- 
-}
-
-section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.511);
-    width: 35vw;
-    padding: 5px;
+    background-color: aquamarine;
     color: white;
 }
 
-#imagem1{
-    background-image: url(imagens/background001.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-}
-
-#imagem2{
-    background-image: url(imagens/background002.jpg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
+section.imagem > p{
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.194);
+    padding: 5px;
 }
 
 footer{
@@ -96,5 +74,4 @@ footer{
     text-align: center;
     color: white;
     padding: 10px;
-    font-size: 0.7em;
 }
