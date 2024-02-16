@@ -59,14 +59,30 @@ section.normal{
 }
 
 section.imagem{
-    background-color: aquamarine;
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.362);
 }
 
 section.imagem > p{
     display: inline-block;
     background-color: rgba(0, 0, 0, 0.194);
     padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+section#imagem1{
+    background-image: url('imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+section#imagem2{
+    background-image: url('imagens/background002.jpg');
+    background-position: right center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 footer{
