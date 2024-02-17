@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        caption{
+            font-size: 1.5e,;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(69, 69, 69);   
+        }
+        tbody > tr:nth-child(even){
+            background-color: red;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot{
+            background-color: rgb(69, 69, 69);
+            color: white;
+        }
+        td:nth-child(2){
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabelas Grandes</h1>
+    <table>
+        <caption>População das Unidades Federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45 919 049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 168 791</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 264 943</td>
+            </tr>
+            <tr>
+                <td>Cidade Aleatória</td>
+                <td>00 000 000</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <td><strong>84.352.783</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus sapiente eaque voluptate veniam voluptatum, dolorum doloribus quas debitis necessitatibus cumque porro expedita dicta saepe libero unde culpa inventore nisi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus aspernatur fuga vero soluta? Ab, quisquam, quaerat aperiam eveniet quam sapiente reiciendis quae ducimus commodi expedita alias aliquam perspiciatis quos quis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, eos. Inventore ipsum facere qui facilis sapiente est minima ullam quaerat provident ipsa, nulla non incidunt repellat, nostrum ipsam, eligendi alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, quaerat quisquam saepe distinctio incidunt inventore corrupti quis eligendi atque asperiores ipsum! Ad magnam molestiae, et ea quia expedita est minus!</p>
+</body>
+</html>
