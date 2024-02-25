@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Praticando Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+        <p>
+            <label for="iarq">Foto de perfil: </label>
+            <input type="file" name="arq" id="iarq" accept="image/*">
+        </p>
+        <p>
+            <label for="iidade">Idade: </label>
+            <input type="number" name="Idade" id="iidade" min="1" max="100">
+        </p>
+        <p>
+            <fieldset>
+                <legend>Sexo</legend>
+                <label for="imasc">Masculino</label>
+                <input type="radio" name="sexo" id="imasc"> <br>
+                <label for="ifem">Feminino</label>
+                <input type="radio" name="sexo" id="ifem">
+            </fieldset>
+        </p>
+        <p>
+            <label for="itel">Telefone: </label>
+            <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)\s\d{1}\s\d{4}-\d{4}$" required autocomplete="tel">
+        </p>
+        <p>
+            <label for="iemail">Email: </label>
+            <input type="email" name="email" id="iemail" required>
+        </p>
+        <p>
+            <label for="isen">Senha: </label>
+            <input type="password" name="sen" id="isen" autocomplete="current-password" minlength="10" maxlength="20" placeholder="Mínimo de 10 caracteres">
+        </p>
+        <p>
+            <label for="imes">Mês de Aniversário: </label>
+            <input type="month" name="mes" id="imes" value="2022-10">
+        </p>
+        <p>
+            <label for="idia">Dia da Compra: </label>
+            <input type="date" name="dia" id="idia" placeholder="06/07/2020">
+        </p>
+        <p>
+            <label for="imed">Média: </label>
+            <input type="number" name="med" id="imed" step=".1" min="0" max="10" placeholder="0 a 10">
+        </p>
+        <p>
+            <label for="icor">Cor: </label>
+            <input type="color" name="cor" id="icor">
+        </p>
+        <p>
+            <label for="invl">Nível de aceitação: </label>
+            <input type="range" name="nvl" id="invl" min="0" max="10" oninput="ival.innerHTML = Number(invl.value)">
+            <output id="ival">5</output>
+        </p>
+        <p>
+            <input type="checkbox" name="term" id="iterm" required>
+            <label for="iterm">Aceito os <a href="#">termos de uso</a></label>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+        
+    </form>
+</body>
+</html>
