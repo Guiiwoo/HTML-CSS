@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+        <label for="imod">Modelo do celular: </label>
+        <select name="mod" id="imd">
+        <optgroup label="Samsung">
+            <option value="S20">Galaxy S20</option>
+            <option value="S22" selected>Galaxy S22</option>
+        </optgroup>
+        <optgroup label="Iphone">
+            <option value="12 pro">Iphone 12 Pro</option>
+            <option value="12 pro max">Iphone 12 Pro Max</option>
+        </optgroup>
+        </select>
+        </p> 
+
+        <p>
+            <label for="itxt">Especificações técnicas: </label> <br>
+            <textarea name="txt" id="itxt" cols="30" rows="10"></textarea>
+        </p>
+
+        <p>
+            <label for="iprof">Profissões: </label>
+            <input type="text" name="prof" id="iprof" list="listprofs">
+            <datalist id="listprofs">
+                <option>Médico</option>
+                <option>Engenheiro</option>
+            </datalist>
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+</html>
