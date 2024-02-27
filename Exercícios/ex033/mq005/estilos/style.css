@@ -14,7 +14,7 @@ header{
     background-color: grey;
 }
 
-h1 {
+header > h1 {
     padding: 10px;
     text-align: center;
 }
@@ -38,21 +38,22 @@ nav{
 }
 
 nav > ul {
-    list-style: none;
+    list-style-type: none;
+}
+
+nav > ul > li{
+    padding: 10px;
+    background-color: rgb(87, 87, 87);
+    border-top: 2px solid grey;
+    text-align: center;
 }
 
 nav > ul > li > a{
-    display: block;
-    background-color: rgb(88, 88, 88);
     text-decoration: none;
     color: white;
-    padding: 10px;
-    text-align: center;
-    border-top: 2px solid grey;
-    font-size: 1em;
 }
 
-nav > ul > li > a:hover {
+nav > ul > li:hover {
     background-color: grey;
 }
 
@@ -67,10 +68,12 @@ main {
 
 article > h2{
     padding-bottom: 20px;
+    font-size: 1.3em;
 }
 
 article > p{
     text-align: justify;
     margin-bottom: 20px;
     text-indent: 20px;
+    font-size: 0.8em;
 }
