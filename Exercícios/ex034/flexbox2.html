@@ -10,18 +10,85 @@
             height: 250px;
             display: flex;
             margin-bottom: 16px;
-            flex-wrap: nowrap;
+            flex-wrap: wrap;
             justify-content: space-between;
+            align-items: flex-start;
         }
         div#container1 div{
             border: 3px solid yellow;
             width: 150px;
         }
+        
+        div#container2{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        div#container2 div{
+            border: 3px solid yellow;
+            width: 150px;
+        }
+
+        div#container3{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px;
+            justify-content: space-between;
+            align-items: flex-end;
+            align-content: flex-end;
+            flex-wrap: wrap;
+            
+        }
+        div#container3 div{
+            border: 3px solid yellow;
+            width: 150px;
+        }
+
+        div#container4{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+            height: 400px;
+        }
+        div#container4 div{
+            border: 3px solid yellow;
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+        }
+
     </style>
 </head>
 <body>
-    <h1>justify-content</h1>
+    <h1>justify-content e align-itens</h1>
     <div id="container1">
+        <div id="div1">1</div>
+        <div id="div2" style="font-size: 4em;">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+    <div id="container2">
+        <div id="div1">1</div>
+        <div id="div2" style="font-size: 4em;">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+    <div id="container3">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+    <div id="container4">
         <div id="div1">1</div>
         <div id="div2">2</div>
         <div id="div3">3</div>
