@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div#container1{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px; 
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+        }
+        div#container1 div{
+            border: 3px solid yellow;
+            flex-basis: 300px;
+            height: 20px;
+            
+        }
+        div#container1 #div1{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+        div#container1 #div4{
+            flex-grow: 2;
+            flex-shrink: 2;
+        }
+        /* flex: 1 2 200px  (atalho para flex-grow, flex-shrink e flex-basis*/
+    </style>
+</head>
+<body>
+    <h1>flex-basis, flex-grow e flex-shrink</h1>
+    <div id="container1">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+</body>
+</html
