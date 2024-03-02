@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div#container1{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px;
+            flex-direction: row;  
+        }
+        div#container1 div{
+            border: 3px solid yellow;
+            width: 50px;
+            flex-basis: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex-basis</h1>
+    <div id="container1">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+</body>
+</html>
