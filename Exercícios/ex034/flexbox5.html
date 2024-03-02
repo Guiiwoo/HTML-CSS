@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box</title>
+    <style>
+        div#container1{
+            border: 3px solid red;
+            height: 250px;
+            display: flex;
+            margin-bottom: 16px;
+            justify-content: center;
+        }
+        div#container1 div{
+            border: 3px solid yellow;
+            width: 150px;
+            margin: 15px;
+        }
+        div#container1 #div1{
+            order: 2;
+            align-self: center;
+        }
+        div#container1 #div2{
+            order: 1;
+            align-self: flex-end;
+        }
+        div#container1 #div3{
+            order: -2;
+            align-self: flex-start;
+        }
+        div#container1 #div4{
+            order: -1;
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>order e align-self</h1>
+    <div id="container1">
+        <div id="div1">1</div>
+        <div id="div2">2</div>
+        <div id="div3">3</div>
+        <div id="div4">4</div>
+    </div>
+</body>
+</html>
