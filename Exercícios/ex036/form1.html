@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+
+        html{
+            background-color: #95a5a6;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        form{
+            width: 400px;
+            background-color: #ecf0f1;
+            border-radius: 5px;
+            box-shadow: 3px 3px 10px #333;
+            padding: 1em;
+        }
+
+        fieldset{
+            border: none;
+            padding: 0px;
+        }
+
+        input, label{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        label{
+            margin-bottom: .25em;
+        }
+
+        input{
+            padding: .75em;
+            border-radius: 5px;
+            margin-bottom: 1.5em;
+            border: 1px solid #bbb;
+            font-size: 1em;
+        }
+
+        legend{
+            padding: 1em;
+            text-align: center;
+            font-weight: bold;
+            color: #454e4f;
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login</h1>
+    <form action="cadastro.php" method="post">
+            <fieldset>
+            <legend>Entre com os seus dados de acesso</legend>
+            <label for="itext">Login</label>
+            <input type="text" id="itext" name="text" required autofocus >
+            <label for="ipassword">Senha</label>
+            <input type="password" id="ipassword" name="password" required>
+            <input type="submit" value="Entrar">
+            </fieldset>
+    </form>
+</body>
+</html>
