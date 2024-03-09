@@ -58,19 +58,41 @@
             color: #454e4f;
             font-size: 1.2em;
         }
+        .btn{
+            width: fit-content;
+            margin-left: auto;
+            background-color: rgb(43, 43, 128);
+            color: white;
+            cursor: pointer;
+        }
+        .btn2{
+            cursor: pointer;
+            background-color: rgb(43, 43, 128);
+            color: white;
+        }
+        div{
+            display: flex;
+            gap: 10px;
+        }
+        .btn--apagar{
+            background-color: rgb(128, 43, 56);
+        }
     </style>
 </head>
 <body>
     <h1>Login</h1>
     <form action="cadastro.php" method="post">
-            <fieldset>
+        <fieldset>
             <legend>Entre com os seus dados de acesso</legend>
             <label for="itext">Login</label>
             <input type="text" id="itext" name="text" required autofocus >
             <label for="ipassword">Senha</label>
             <input type="password" id="ipassword" name="password" required>
-            <input type="submit" value="Entrar">
-            </fieldset>
+            <div>
+                <input type="submit" value="Entrar" class="btn2">
+                <input type="reset" value="Apagar" class="btn2 btn--apagar">
+            </div>
+        </fieldset>
     </form>
 </body>
 </html>
