@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+html, body {
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+    background-color: #3C68B8;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    background-color: white;
+    width: 50vw;
+    min-width: 400px;
+    max-width: 700px;
+}
+
+input, label{
+    display: block;
+}
+
+fieldset{
+    border: none;
+}
+
+legend{
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5em;
+    font-weight: bolder;
+    color: #3C68B8;
+}
