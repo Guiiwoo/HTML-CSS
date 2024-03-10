@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de contato</title>
+    <style>
+        body, html{
+            min-height: 100vh;
+            margin: 0px;
+            padding: 0px;
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+        body{
+            background-color: rgb(44, 38, 29);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+
+            background-color: rgb(199, 177, 151);
+            width: 35vw;
+            min-width: 300px;
+            max-width: 600px;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.397);
+            border-bottom: 5px solid rgb(83, 72, 55);
+        }
+        fieldset{
+            padding: 20px;
+            border: none;
+        }
+
+        legend{
+            text-align: center;
+            font-weight: bold;
+            padding: 20px;
+            font-size: 2.5em;
+        }
+
+        input, label, textarea{
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        
+        label{
+            font-size: 1.3em;
+            margin-bottom: 7px;
+        }
+
+        input{
+            margin-bottom: 40px;
+            height: 50px;
+            border: none;
+            padding: 10px;
+            border-bottom: 3px solid grey;
+            font-size: 1.2em;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.264);
+            
+        }
+
+        textarea{
+            margin-bottom: 30px;
+            resize: none;
+            border: none;
+            padding: 10px;
+            border-bottom: 3px solid grey;
+            box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.316);
+            font-size: 1.4em;
+            outline: 0px;
+        }
+
+        input[type="submit"]{
+            border: none;
+            width: fit-content;
+            font-size: 1.3em;
+            padding: 10px 15px;
+            margin: 0px;
+            margin-left: auto;
+            cursor: pointer;
+        }
+        
+        input:focus{
+        }
+        
+        input:focus, textarea:focus{
+            border-color: red;
+        }
+        
+        input:focus:valid, textarea:focus:valid{
+            border-color: green;
+        }        
+        </style>
+</head>
+<body>
+    <form action="" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Formulário de contato</legend>
+            
+            <label for="iname">Seu nome</label>
+            <input type="text" name="name" id="iname" required minlength="2" maxlength="50" autofocus autocomplete="name" placeholder="Digite seu nome completo">
+
+            <label for="iemail">E-mail</label>
+            <input type="email" name="email" id="iemail" required autocomplete="email" minlength="5" maxlength="40" placeholder="Digite ume-mail válido">
+
+            <label for="isubject">Assunto</label>
+            <input type="text" name="subject" id="isubject" minlength="5" maxlength="100" required>
+
+            <label for="imessage">Mensagem</label>
+            <textarea name="message" id="imessage" cols="30" rows="10" required minlength="20" maxlength="1000"></textarea>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
