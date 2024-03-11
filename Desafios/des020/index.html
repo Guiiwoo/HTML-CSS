@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulário</title>
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
@@ -11,14 +11,16 @@
         <fieldset>
             <legend>Cadastre-se</legend>
             <label for="iuser">Usuário</label>
-            <input type="text" name="user" id="iuser">
+            <input type="text" name="user" id="iuser" required minlength="5" maxlength="20" autocomplete="username">
             <label for="iemail">E-mail</label>
-            <input type="email" name="email" id="iemail">
+            <input type="email" name="email" id="iemail" required minlength="5" maxlength="40" autocomplete="email">
             <label for="ipassword">Senha</label>
-            <input type="password" name="password" id="ipassword">
+            <input type="password" name="password" id="ipassword" required minlength="10" maxlength="30" autocomplete="new-password">
 
-            <input type="submit" value="Cadastre-se">
-            <p>Já possui cadastro? <a href="">Faça login</a></p>
+            <div>
+                <input type="submit" value="Cadastre-se">
+                <p>Já possui cadastro? <a href="index_02.html">Faça login</a></p>
+            </div>
         </fieldset>
     </form>
 </body>
