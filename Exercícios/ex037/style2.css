@@ -1,0 +1,27 @@
+a[href^=http]::after{
+    content: "\00A0" url(imagens/newWindow-icon.png);
+}
+
+a[href$=".pdf"]::before{
+    content: url(imagens/pdf-icon.gif) "\00A0";
+}
+
+input:enabled + label{
+    background-color: red;
+}
+
+input:enabled:checked + label{
+    background-color: green;
+}
+
+input:disabled + label{
+    background-color: blue;
+}
+
+ol > li > ul > li > ul > li:nth-child(3){
+    background-color: orange;
+}
+
+
+
+
