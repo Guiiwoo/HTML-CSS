@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p:only-child{
+            background-color: orangered;
+        }
+        p:read-write{
+            border-bottom: 2px solid red;
+        }
+        div:target{
+            border-radius: 4px dashed red;
+        }
+    </style>
+</head>
+<body>
+    <div id="top"><a href="#titulo">vai para o titulo</a></div>
+
+    <form action="">
+
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+        <hr>
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p contenteditable>paragrafo editável</p>
+        </div>
+
+        <div id="titulo">
+            <h1>título</h1>
+        </div>
+
+        <a href="#top">Vai para o topo</a>
+    </form>
+</body>
+</html>
