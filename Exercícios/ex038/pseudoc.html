@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            background-color: #7a7979;
+            color: white;
+            border: none;
+            padding: 1em;
+            margin-bottom: .5em;
+        }
+        button:disabled{
+            opacity: .5;
+        }
+        p:empty::before{
+            content: "parágrafo vazio??";   
+        }
+        a:hover,
+        a:focus{
+            background-color: yellow;
+        }
+        input[type="text"]:read-write{
+            background-color: #999;
+            border: none;
+            padding: .5em;
+        }
+        input[type="text"]:disabled{
+            background-color: white;
+        }
+        input[type="text"]:read-only:not(:disabled){
+            background-color: yellow;
+        }
+        input[type="text"]::placeholder{
+            color: red;
+        }
+        input[type="text"]:placeholder-shown{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button>vai</button>
+    <button disabled>Vai disabled</button>
+
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias, veritatis.</p>
+    <p> </p>
+    <p></p>
+
+    <ul>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+        <li><a href="#">Link falso</a></li>
+    </ul>
+
+    <p tabindex="0">Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <form action="#">
+        <input type="text" value="valor inicial"><br><br>
+        <input type="text" value="valor" disabled><br><br>
+        <input type="text"  value="valor" readonly><br><br>
+        <input type="text" placeholder="placeholder"><br><br>
+    </form>
+</body>
+</html>
