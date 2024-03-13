@@ -5,39 +5,69 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkbox</title>
     <style>
-        input[type="checkbox"]{
-            display: none;
 
-        }
-
-        label span{
+        label > span{
             display: inline-block;
-            width: 25px;
-            height: 25px;
+            font-size: 24px;
+            width: 1.5625rem;
+            height: 1.5625rem;
             background-color: red;
+            border-radius: 5px;
+            transition: background-color .2s;
         }
         input[type="checkbox"]:checked + label span{
             background-color: blue;
+            position: relative;
         }
-        input[type="checkbox"]:checked + label span{
-            border-left: 5px solid black;
-            border-bottom: 5px solid black;
+        input[type="checkbox"]+ label span::before{
+            content: "";
+            display: block;
+            border: .087em solid white;
+            position: absolute;
+            width: 4px;
+            top: .077em;
+            left: .38em;
+            right: .3em;
+            bottom: .3em;transform: rotate(45deg);
+            border-left-color: transparent;
+            border-top-color: transparent;
+            opacity: 0;
+            transition: opacity .5s;
+        }
+        input[type="checkbox"]:checked + label span::before{
+            opacity: 1; 
+        }
+        input[type="checkbox"]{
+            width: 1px;
+            height: 1px;
+            padding: 0px;
+            margin: 0px;
+            overflow: hidden;
+            position: absolute;
+            outline: none;
+        }
+        input[type="checkbox"]:focus + label span{
+            outline: 2px solid black;
+            outline-offset: -2px;
+            box-sizing: border-box;
         }
     </style>
 </head>
 <body>
-    <h1>Checkbox</h1>
+    <h1>CHECKBOX</h1>
 
     <input type="checkbox" name="" id="html" checked>
     <label for="html">
         <span></span>
         HTML
     </label>
+
     <input type="checkbox" name="" id="css">
     <label for="css">
         <span></span>
         CSS
     </label>
+
     <input type="checkbox" name="" id="js">
     <label for="js">
         <span></span>
